@@ -28,3 +28,7 @@ use the editor.
   own key and store it in Secrets.
 - **Secrets.** Lovable manages them. Do not put secret values in the repo.
 <!-- LOVABLE:END -->
+
+## GymLog app structure
+
+- Keep GymLog's view switching and user-facing workout screens in `src/components/gym/GymApp.tsx`; keep persisted state changes and records in `src/lib/gym/store.ts` so its local-first behavior stays centralized.
